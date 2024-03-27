@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #191919;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    padding-left: 19%;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 2;
+}
+.container h1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.container button{
+  color: white;
+  padding: 7px 12px;
+  border-radius: 10px;
+  background-color: var(--Primary, #0062D6);
+  border: none;
+}
+.image {
+  display: flex;
+  gap: 20px;
+}
+.image img {
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 475px) {
+  .container {
+    width: 100%;
+    padding: 15px 10px;
+  }
+}

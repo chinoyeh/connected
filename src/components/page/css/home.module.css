@@ -1,0 +1,81 @@
+.content {
+  width: 95%;
+  padding: 10px;
+  margin:5% auto 0 auto;
+  height: 80vh;
+
+}
+.post_container{
+  max-height: 70%;
+  overflow-y: scroll;
+}
+.story_container{
+   max-width: 850px;
+   gap: 20px;
+  
+}
+.no_content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.loader_container{
+  display: flex;
+  justify-content: center;
+  margin: 3% 0;
+}
+.story_container img {
+  width: 70px;
+  border-radius: 50%;
+
+}
+
+.modalContent {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+}
+.modalContent img {
+  width: 50px;
+}
+.modalContainer{
+  position: fixed;
+  left: 0;
+  top: 0; 
+  overflow: auto; 
+}
+.modalMain{
+    border-radius: 8px;
+  width: 40%;
+  margin: 60px auto;
+  height: 50%;
+  padding: 20px;
+}
+.modalContent input {
+  background:none;
+  color: gray;
+  width: 100%;
+  /* padding: 12px 20px; */
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  position: relative;
+  height: 100%;
+}
+.modalContent input::placeholder{
+  position: absolute;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+      }
+}
+@media only screen and (max-width: 567px) {
+    .content {
+        width: 100%;
+      }
+}

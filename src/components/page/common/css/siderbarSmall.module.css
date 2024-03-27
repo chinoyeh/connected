@@ -1,0 +1,30 @@
+.main {
+  display: none;
+}
+
+@media only screen and (max-width: 475px) {
+  .main {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    background-color: #191919;
+    position: fixed;
+    bottom: 0;
+  }
+  .list {
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .active li {
+    background-color: #0062d6;
+    border-radius: 40px;
+  }
+  .list li:hover {
+    background-color: #0062d6;
+    border-radius: 40px;
+  }
+}

@@ -1,0 +1,190 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: #121212;
+  font-family: "Commissioner", sans-serif;
+  color: #f3f3f3;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #121212 inset !important;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: #f3f3f3 !important;
+}
+.MainContainer {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.MainContent {
+  /* position: absolute; */
+  /* left: 18%; */
+  display: flex;
+  justify-content: space-between;
+ 
+  padding-left: 18%;
+}
+@media only screen and (max-width: 768px) {
+  .MainContent {
+    padding-left: 8%;
+  }
+}
+@media only screen and (max-width: 457px) {
+  .MainContent {
+  padding-left: 0%;
+}
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #0DFF80 #0DFF80;
+  width: 36px;
+  height: 36px;
+  border-radius: 50% !important;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 30px;
+  height: 30px;
+  border-color: #D9499B #D9499B transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+/* Note: Firefox uses a different pseudo-element for the scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* For Firefox on Windows */
+* {
+  scrollbar-color: transparent transparent;
+}
+
+
+.full_loader_container{
+  z-index: 3;
+  width: 100%;
+  height: 150vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+
+}
+.full_loader_container .loader{
+  margin-top: 25%;
+}
+.display_none{
+  display: none;
+}
+
+
+
+
+
+.loader_small {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% !important;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader_small::after,
+.loader_small::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #0DFF80 #0DFF80;
+  width: 26px;
+  height: 26px;
+  border-radius: 50% !important;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader_small::before {
+  width: 20px;
+  height: 20px;
+  border-color: #D9499B #D9499B transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}

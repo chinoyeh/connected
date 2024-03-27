@@ -1,0 +1,30 @@
+.form {
+  margin-top: 50px;
+}
+.forgot_password {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.forgot_password p {
+  color: #0062d6;
+  cursor: pointer;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.signup {
+  margin: 20px 0;
+  text-align: center;
+  color: #9f9f9f;
+
+  font-size: 15px;
+
+  font-weight: 400;
+}
+.signup span {
+  font-weight: 600;
+  color: #eff6ff;
+  cursor: pointer;
+}

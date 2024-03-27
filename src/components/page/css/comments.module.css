@@ -1,0 +1,46 @@
+.content {
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.header img {
+  width: 50px;
+}
+.header h3 {
+  font-size: 1rem;
+}
+.postContent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  border: 0.5px solid white;
+  border-left: none;
+  border-right: none;
+}
+
+.postContent button {
+  width: 10%;
+}
+.postHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+}
+.postHeader img {
+  width: 50px;
+}
+.postHeader input{
+    background-color: #121212;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+}

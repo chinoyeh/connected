@@ -1,0 +1,58 @@
+.form_input {
+    margin: 25px 0;
+    width: 100%;
+    position: relative;
+}
+.input_container{
+    border-radius: 12px;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    border: 1.48px solid var(--Black-70, #C8C8C8);
+}
+.error_input{
+    border-radius: 12px;
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    border: 1.48px solid var(--Black-70, #FF3838);
+   
+}
+.input_container input, .error_input input{
+    border: none;
+    background: inherit;
+    outline: none;
+    color: #C8C8C8;
+    width: 95%;
+}
+.input_container img, .error_input img{
+    width: 20px;
+    height: 20px;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+.input_container input::placeholder{
+    color: white;
+}
+
+.error{
+    margin-top: 5px;
+    color: var(--red, #FF3838);
+    font-weight: 400;
+    font-size: 15px;
+}
+.reset_input{
+    width: 80%;
+}
+.form_input p{
+    margin-bottom: 10px;
+}
+.icontwo{
+    position: absolute;
+    right: 5%;
+}

@@ -1,0 +1,143 @@
+.content {
+    width: 95%;
+    padding: 10px;
+    margin:5% auto 0 auto;
+    height: 80vh;
+  
+  }
+  .header{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .header img{
+    width: 35px;
+  }
+  .header h2{
+    color:  #C8C8C8;
+    font-weight: 500;
+  }
+  .loader_container{
+    display: flex;
+    justify-content: center;
+    margin: 20% 0;
+  }
+  .loader_content{
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+  }
+  .modalContainer{
+    position: fixed;
+    left: 0;
+    top: 0; 
+    overflow: auto; 
+  }
+  .modalMain{
+      border-radius: 8px;
+    width: 40%;
+    margin: 60px auto;
+    height: 50%;
+    padding: 20px;
+  }
+  .modalContent input ,.profile input{
+    background:none;
+    color: gray;
+    width: 100%;
+    /* padding: 12px 20px; */
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    position: relative;
+    height: 100%;
+   
+  }
+ 
+  .modalContent {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+  }
+  .modalContent img, .profile img {
+    width: 35px;
+  }
+  .modalContent input::placeholder{
+    position: absolute;
+    top: 0;
+  }
+  .comment_container{
+    height: 55vh;
+    overflow-y: scroll;
+    
+  }
+  .new_comment{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  }
+  .comment_content{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: 90%;
+
+  }
+  .comment_content img{
+    width: 35px !important;
+  }
+  .comment_content p {
+    margin: 3px 0;
+    font-size: 14px;
+  }
+  .comment_content span{
+    font-size: 15px;
+    color: #C8C8C8;
+  }
+  .new_comment img{
+    width: 55px;
+  }
+
+  .comment_header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
+  .profile{
+    display: flex;
+    column-gap: 10px;
+   align-items: center;
+   width: 90%;
+  }
+  .date img{
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  .date .imageContainer{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    align-items: center;
+  }
+  .button{
+    width: 10%;
+  }
+  .edit_comment{
+    width: 100%;
+  }
+  .edit_comment input{
+    border: none;
+    background: none;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    color: #C8C8C8;
+  }

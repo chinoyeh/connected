@@ -1,0 +1,23 @@
+.container{
+    padding: 10px 15px;
+   
+    margin: 10px 0;
+    width: fit-content;
+    overflow-wrap: wrap;
+  
+ 
+    border-radius: 29.208px 29.208px 29.208px 0px;
+    background: #C4C4C4;
+color: black
+}
+.sentContainer{
+    padding: 10px 15px;
+    width: 100%;
+    margin: 10px 0;
+    width: fit-content;
+    border-radius: 29.208px 0px 29.208px 29.208px;
+
+
+    background: #067ebf;
+color: black
+}

@@ -1,0 +1,20 @@
+.user{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 20px 0;
+}
+.user img{
+    width: 50px;
+}
+.user .content h1{
+  font-size: 1em;
+}
+.user .content p{
+    color:  #C6C6C6;
+    font-weight: 800;
+    font-size: 0.8em;
+    margin-top: 8px;
+}
+@media only screen and (max-width: 576px) {
+}

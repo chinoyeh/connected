@@ -1,0 +1,101 @@
+.content {
+  width: 95%;
+  padding: 10px;
+  
+  margin:5% auto 0 auto;
+
+} 
+.loader_container{
+  display: flex;
+  justify-content: center;
+  margin: 3% 0;
+}
+.container {
+  padding: 10px 50px;
+}
+.imgStyle {
+  width: 150px;
+}
+.no_content{
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.imgStyle img {
+  width: 150px;
+}
+.container h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.container span {
+  font-size: 1.2rem;
+}
+.container ul {
+  padding: 10px 60px;
+}
+.container ul li {
+  font-size: 1.2rem;
+}
+.container button {
+  max-width: 300px;
+}
+.container ul span {
+  font-size: 3rem;
+}
+
+.modalContainer{
+  position: fixed;
+  left: 0;
+  top: 0; 
+  overflow: auto; 
+}
+.modalMain{
+    border-radius: 8px;
+  width: 40%;
+  margin: 60px auto;
+  height: 50%;
+  padding: 20px;
+}
+.modalContent input ,.profile input{
+  background:none;
+  color: gray;
+  width: 100%;
+  /* padding: 12px 20px; */
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  position: relative;
+  height: 100%;
+}
+.modalContent {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  gap: 10px;
+}
+.modalContent img, .profile img {
+  width: 50px;
+}
+.modalContent input::placeholder{
+  position: absolute;
+  top: 0;
+}
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .container {
+    padding: 0px;
+  }
+}

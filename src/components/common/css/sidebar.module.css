@@ -1,0 +1,142 @@
+.sidebarMain {
+  width: 18%;
+  border-right: 1px solid #2f3336;
+  padding: 50px 20px;
+  display: block;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+
+  background-color: #191919;
+}
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 10px;
+}
+.sidebar ul li img, .image_container img{
+  width: 20px;
+}
+.image_container{
+  position: relative;
+}
+.dot{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0062d6;
+  right: -8%;
+  top: -10%;
+}
+.sidebar ul li span {
+  font-size: 1em;
+}
+.sidebar ul li:hover {
+  background-color: #0062d6;
+  border-radius: 40px;
+}
+.active li {
+  background-color: #0062d6;
+  border-radius: 40px;
+}
+
+.sidebar_button button {
+  background: linear-gradient(50deg, #d43775, #c84340, #c44424);
+  border-radius: 10px;
+  color: #000000;
+  margin: 20px 0;
+  font-size: 1em;
+  font-weight: 600;
+
+  width: 100%;
+}
+.sidebar_profile {
+  display: flex;
+  background-color: #000000;
+  border-radius: 40px;
+  padding: 5px;
+  justify-content: space-around;
+  margin: 100px auto 10px auto;
+
+  width: 100%;
+}
+.sidebar_profile p {
+  font-size: 0.8rem;
+}
+.sidebar_profile span {
+  font-size: 0.7rem;
+  color: gray;
+}
+.button span{
+  display: none;
+  font-size: 1.5rem;
+
+}
+@media only screen and (max-width: 768px) {
+  .sidebarMain {
+    width: 8%;
+    padding: 50px 0px;
+  }
+  .logo {
+    max-width: 45px;
+  }
+  .sidebar ul li span {
+    display: none;
+  }
+  .sidebar ul li:hover {
+    border-radius: 20px;
+  }
+  .sidebar ul li {
+   justify-content: center;
+  }
+  .sidebar_profile {
+    padding: 2px;
+  }
+  .sidebar_profile p,
+  .sidebar_profile span,
+  .detail {
+    display: none;
+  }
+  .sidebar_profile {
+    left: 0;
+  }
+  .sidebar ul li {
+    padding: 8px 6px;
+  }
+  .button p {
+    display: none;
+  }
+  .button span{
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sidebarMain{
+    padding:  50px 10px;
+    width: 8%;
+  }
+  .sidebarMain{
+    padding:  50px 5px;
+  }
+  .sidebar ul li img {
+    max-width: 30px;
+  }
+  
+}
+@media only screen and (max-width: 475px) {
+  .sidebarMain{
+    display: none;
+  }
+}

@@ -1,0 +1,124 @@
+.error {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    border: 1px solid var(--error, #D14A4A);
+    background: #FDF4F4;
+    margin-top: 10px;
+    padding:  8px;
+  
+    width: 300px;
+    z-index: 3;
+    animation: slideInOut 5s ease-in-out forwards;
+  }
+  
+  @keyframes slideInOut {
+    0% {
+      transform: translateX(-50%) translateY(-150%);
+    }
+    5% {
+      transform: translateX(-50%) translateY(0%);
+    }
+ 
+    90% {
+      transform: translateX(-50%) translateY(0%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-150%);
+    }
+  }
+  
+  
+
+  
+.error h3{
+    color: var(--error, #D14A4A);
+/* Headline / H-400 */
+font-size: 14px;
+font-family: 'SF Pro Display', sans-serif;
+font-weight: 800;
+line-height: 24px;
+margin: 0;
+
+}
+.success{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 36px;
+    border: 1px solid var(--primary-color, #85CE54);
+    background: #F5FFEF;
+    margin-top: 10px;
+    padding: 8px 10px;
+    width: 300px;
+    animation: slideIn 3s ease-in-out forwards;
+    z-index: 3;
+
+}
+.success_content{
+  display: flex;
+  justify-content: flex-start;
+  grid-column-gap: 5px;
+  align-items: center;
+}
+.error p{
+    font-size: 14px;
+    font-family: 'SF Pro Display', sans-serif;
+    color: #D14A4A;
+    
+margin-left: 20px;
+margin-top: 0;
+margin-bottom: 0;
+}
+.success p{
+    color: var(--primary-color, #85CE54);
+/* Headline / H-400 */
+font-size: 14px;
+font-family: 'SF Pro Display', sans-serif;
+font-weight: 500;
+margin: 0;
+
+}
+.close_button{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+}
+.error_header{
+    display: flex;
+    grid-column-gap:5px;
+}
+
+
+  .hide{
+   display: none;
+  }
+
+
+  .slide-in-component {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+  }
+  
+  .slide-in-component.visible {
+    top: 0;
+  }
+  
+  .slide-in-component button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .slide-in-component .content {
+    padding: 20px;
+  }
+  

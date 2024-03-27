@@ -1,0 +1,96 @@
+.container {
+  background-color: #191919;
+  max-height: 600px;
+  position: relative;
+
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  border: 1px solid #002347;
+}
+.post {
+  width: 100%;
+
+}
+.post img , .post video{
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border: none;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container p {
+  font-size: 1em;
+  font-weight: 400;
+
+  padding: 10px;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+.profile_picture {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile_picture img {
+  border-radius: 50%;
+  border: 1px solid white;
+  width: 3em;
+}
+.profile_picture span {
+  color: #9f9f9f;
+}
+.container .list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  margin: 0;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.modalContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: none;
+}
+.modalmain{
+  width: 30%;
+  border-radius: 10px;
+  border: 1px solid 
+  #012347;
+  float: right;
+  margin:10px;
+  padding: 8px;
+
+}
+.modalList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 20px;
+  padding: 0px;
+  cursor: pointer;
+}
+.modalList li{
+  width: 100%;
+  
+}
+.modalList li:hover{
+  opacity: 0.8;
+  
+}
+
